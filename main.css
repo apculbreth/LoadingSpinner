@@ -1,0 +1,236 @@
+/* CSS for the sinner */
+body {
+  
+}
+
+/* Just Spinning*/
+.first #JustSpinning {
+  width: 200px;
+  height: 5px;
+  position: fixed;
+  margin-left: 120px;
+  margin-top: 15px;
+}
+.first #JustSpinning p{
+	font-size: 20px;
+	color: #1886c7;
+	font-family: "Effra Regular", "Droid Sans", Arial, serif;
+}
+.first #jumpSpinning {
+  width: 110px; 
+  height: 66px;
+  background-image: url("images/mascot-cardinal.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 10px;
+  top: 70px;
+  -webkit-animation: spin 1.25s infinite ease-in-out;
+  animation: spin 1s infinite ease-in-out;
+}
+@-webkit-keyframes spin {
+  100%{transform: rotateZ(360deg);}
+}
+@keyframes spin {
+  100%{transform: rotateZ(360deg);}
+}
+
+/* Jump and Spinning*/
+.second h2 {
+	margin-top: 140px;
+}
+.second #JumpAndSpin {
+  width: 200px;
+  height: 5px;
+  position: fixed;
+  margin-left: 170px;
+  margin-top: 70px;
+}
+.second #JumpAndSpin p{
+	font-size: 20px;
+	color: #1886c7;
+	font-family: "Effra Regular", "Droid Sans", Arial, serif;
+}
+.second #TakeAJumpandSpin {
+  width: 110px; 
+  height: 66px;
+  background-image: url("images/mascot-cardinal.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 60px;
+  top: 290px;
+  -webkit-animation: jumpandspin 1.25s infinite ease-in-out;
+  animation: jumpandspin 1.25s infinite ease-in-out;
+}
+@-webkit-keyframes jumpandspin {
+  50%{margin-top: -65px; width: 110px; margin-left: -50px;}
+  100%{transform: rotateZ(360deg);}
+}
+@keyframes jumpandspin {
+  50%{margin-top: -65px; width: 110px; margin-left: -50px;}
+  100%{transform: rotateZ(360deg);}
+}
+
+
+/* Moooooooove Right */
+.third h2 {
+	margin-top: 175px;
+}
+.third #SlipNSlide {
+  width: 200px;
+  height: 5px;
+  position: fixed;
+  margin-left: 200px;
+  margin-top: 14px;
+}
+.third #SlipNSlide p{
+	font-size: 20px;
+	color: #1886c7;
+	font-family: "Effra Regular", "Droid Sans", Arial, serif;
+}
+.third #SlideRight {
+  width: 110px; 
+  height: 66px;
+  background-image: url("images/mascot-cardinal.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 60px;
+  top: 430px;
+  -webkit-animation: slide 2s infinite forwards;
+  animation: slide 2s infinite forwards;
+}
+@-webkit-keyframes slide {
+  from {
+    margin-left: 0%;
+    width: 110px; 
+  }
+  to {
+    margin-left: 20%;
+    width: 110px;
+  }
+}
+@keyframes slide {
+  from {
+    margin-left: 0%;
+    width: 110px; 
+  }
+  to {
+    margin-left: 20%;
+    width: 110px;
+  }
+}
+
+
+/* Moooooooove Right then left */
+.forth h2 {
+	margin-top: 130px;
+}
+.forth #BackNForth{
+  width: 200px;
+  height: 5px;
+  position: fixed;
+  margin-left: 200px;
+  margin-top: 14px;
+}
+.forth #BackNForth p{
+	font-size: 20px;
+	color: #1886c7;
+	font-family: "Effra Regular", "Droid Sans", Arial, serif;
+}
+.forth #RightToLeft {
+  width: 110px; 
+  height: 66px;
+  background-image: url("images/mascot-cardinal.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 60px;
+  top: 590px;
+  -webkit-animation: slide 2s infinite alternate;
+  animation: slide 2s infinite alternate;
+}
+@-webkit-keyframes slide {
+  from {
+    margin-left: 0%;
+    width: 110px; 
+  }
+  to {
+    margin-left: 20%;
+    width: 110px;
+  }
+}
+@keyframes slide {
+  from {
+    margin-left: 0%;
+    width: 110px; 
+  }
+  to {
+    margin-left: 20%;
+    width: 110px;
+  }
+}
+
+/* Moooooooove Right flip and go left */
+.fifth h2 {
+	margin-top: 130px;
+}
+.fifth #GoRight{
+  width: 200px;
+  height: 5px;
+  position: fixed;
+  margin-left: 200px;
+  margin-top: 14px;
+}
+.fifth #GoRight p{
+	font-size: 20px;
+	color: #1886c7;
+	font-family: "Effra Regular", "Droid Sans", Arial, serif;
+}
+.fifth #TurnGoLeft {
+  width: 110px; 
+  height: 66px;
+  background-image: url("images/mascot-cardinal.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 60px;
+  top: 745px;
+  -webkit-animation: slideflip 4s linear infinite;
+  animation: slideflip 4s linear infinite;
+}
+
+@-webkit-keyframes slideflip {
+  0% {
+    margin-left: 0%;
+    -webkit-transform: rotateY(0);
+  }
+  25% {
+    margin-left: 20%;
+    -webkit-transform: rotateY(0);
+  }
+  45% {
+    margin-left: 20%;
+    -webkit-transform: rotateY(180deg);
+  }
+  80% {
+    margin-left: 0;
+    -webkit-transform: rotateY(180deg);
+  }
+}
+@keyframes slideflip {
+  0% {
+    margin-left: 0%;
+    -webkit-transform: rotateY(0);
+  }
+  25% {
+    margin-left: 20%;
+    -webkit-transform: rotateY(0);
+  }
+  45% {
+    margin-left: 20%;
+    -webkit-transform: rotateY(180deg);
+  }
+  80% {
+    margin-left: 0;
+    -webkit-transform: rotateY(180deg);
+  }
+}
